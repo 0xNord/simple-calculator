@@ -19,5 +19,40 @@ body {
 .calculator {
     width: 300px;
     height: 300px;
+    padding: 10px 5px 0px;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__display {
+        height: 50px;
+        width: 100%;
+        background-color: #ededed;
+        margin-bottom: 20px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: 5px;
+        // display: grid;
+        // grid-template-columns: repeat(5, 50px);
+        // grid-template-rows: repeat(5, 50px);
+        // grid-template-areas:
+        // "a a a a a"
+        // "a a a a a"
+        // "a a a a a"
+        // "a a a a a"
+        // "a a a a a";
+        // gap: 1px;
+        &-numbers {
+            display: grid;
+            grid-template-columns: repeat(3,50px);
+            grid-template-rows: repeat(4, 50px);
+        }
+        &-operators {
+            display: grid;
+            grid-template-columns: repeat(1,50px);
+            grid-template-rows: repeat(4, 50px);
+        }
+    }
 }
