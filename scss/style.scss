@@ -3,7 +3,11 @@
 
 // base styles
 body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
+
 .container {
     max-width: 1030px;
     height: 100vh;
@@ -15,25 +19,38 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 // calculator styles
 .calculator {
     width: 300px;
     height: 300px;
     padding: 10px 5px 0px;
     border: 1px solid black;
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #2a2a2a 78%, #f0f5f5 90%, #000000 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
+
     &__display {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10px;
         height: 50px;
         width: 100%;
         background-color: #ededed;
         margin-bottom: 20px;
+        font-family: 'Digital-7 Italic', sans-serif;
+        font-size: 34px;
+        font-weight: 400;
     }
+
     &__buttons {
         display: flex;
         justify-content: space-evenly;
         column-gap: 5px;
+
         // display: grid;
         // grid-template-columns: repeat(5, 50px);
         // grid-template-rows: repeat(5, 50px);
@@ -44,15 +61,43 @@ body {
         // "a a a a a"
         // "a a a a a";
         // gap: 1px;
+        &-top button {
+            padding: 5px;
+        }
+
         &-numbers {
+            gap: 4px;
             display: grid;
-            grid-template-columns: repeat(3,50px);
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(4, 50px);
+            font-size: 24px;
+        }
+
+        &-operators {
+            gap: 4px;
+            display: grid;
+            grid-template-columns: repeat(1, 50px);
             grid-template-rows: repeat(4, 50px);
         }
-        &-operators {
-            display: grid;
-            grid-template-columns: repeat(1,50px);
-            grid-template-rows: repeat(4, 50px);
+
+        &-button {
+            background-color: grey;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+
+            &:hover {
+                transform: scale(.98);
+                transform: translateY(-1px);
+            }
         }
     }
+}
+// buttons effects
+.active {
+    position: relative;
+    top: 2px;
+    transform: scale(.95);
+    opacity: .8;
 }

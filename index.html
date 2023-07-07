@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Calculator</title>
+    <link href="https://fonts.cdnfonts.com/css/digital-7-mono" rel="stylesheet">
+    <!-- link font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- our scripts -->
+    <script src="./js/app.js" defer></script>
 </head>
+
 <body>
     <div class="container">
         <h1>Simple JS Calculator</h1>
         <div class="calculator">
             <div class="calculator__display">
-                display here
+                0123456789.0
             </div>
-            <div class="calculator__buttons">
+            <div class="calculator__buttons" id="btns">
                 <div class="calculator__buttons-top">
-                    <button class="calculator__buttons-button">ON/C</button>
+                    <button class="calculator__buttons-button" id="turnOnBtn">ON/C</button>
                 </div>
                 <div class="calculator__buttons-numbers">
                     <button class="calculator__buttons-button">1</button>
@@ -30,7 +39,7 @@
                     <button class="calculator__buttons-button">0</button>
                     <button class="calculator__buttons-button">.</button>
                     <button class="calculator__buttons-button">=</button>
-               </div>
+                </div>
                 <div class="calculator__buttons-operators">
                     <button class="calculator__buttons-button">/</button>
                     <button class="calculator__buttons-button">*</button>
@@ -40,6 +49,5 @@
             </div>
         </div>
     </div>
-    <script src="./js/app.js"></script>
 </body>
 </html>
