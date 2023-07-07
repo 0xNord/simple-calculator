@@ -1,0 +1,26 @@
+/* base */
+
+*, *::before, *::after {
+    box-sizing: inherit; /*  all elements preset in the Dom & pseudo-elements(::before, ::after) takes value of property from its parent element  */
+}
+html {
+    box-sizing: border-box; /* dimension of elements will include the border and padding */
+    /* height: 100%; */
+}
+body {
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+}
+a:hover { text-decoration: none; }
+ul, ul li {
+    list-style: none;
+    padding: 0;
+}
