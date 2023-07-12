@@ -39,11 +39,17 @@ body {
         padding-right: 10px;
         height: 50px;
         width: 100%;
-        background-color: #ededed;
+        // background-color: rgb(127, 138, 70);
+        background-color: rgb(84, 94, 34);
+        box-shadow: 0px 0px 50px #000000ee inset;
+        text-shadow: 0px 0px 20px #ffff0022;
         margin-bottom: 20px;
         font-family: 'Digital-7 Italic', sans-serif;
         font-size: 34px;
-        font-weight: 400;
+        font-weight: bold;
+        color: rgb(7, 180, 59);
+        filter: brightness(1.35);
+        text-shadow: 0px 0px 14px rgb(7, 180, 59, 1);
     }
 
     &__buttons {
@@ -94,6 +100,7 @@ body {
         }
     }
 }
+
 // buttons effects
 .active {
     position: relative;
