@@ -34,11 +34,13 @@ turnOnBtn.addEventListener('mouseup',(e) => {
 })
 // comma Listener
 comma.addEventListener('mousedown', (e) => {
+    console.log(onlyOneComma)
     // added comma if already display some numbers
     if(onlyOneComma && (display.textContent !== '')){ display.textContent += e.target.textContent; onlyOneComma = false; }
 })
 //==== operator
 parentOperators.addEventListener('mouseup', (e) => {
+    onlyOneComma = true; // unblock comma
     value1 = display.textContent
     operator = e.target.textContent
     clearDisplay()
