@@ -13,7 +13,7 @@ body {
     height: 100vh;
     padding: 0 15px;
     margin: 0 auto;
-    background-color: aqua;
+    background-color: f1fbfb;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,17 +56,6 @@ body {
         display: flex;
         justify-content: space-evenly;
         column-gap: 5px;
-
-        // display: grid;
-        // grid-template-columns: repeat(5, 50px);
-        // grid-template-rows: repeat(5, 50px);
-        // grid-template-areas:
-        // "a a a a a"
-        // "a a a a a"
-        // "a a a a a"
-        // "a a a a a"
-        // "a a a a a";
-        // gap: 1px;
         &-top button {
             padding: 5px;
         }
