@@ -60,7 +60,7 @@ function calc(o, x, y){
 resultBtn.addEventListener('mouseup', (e) => {
     value2 = display.textContent
     // render result
-    display.textContent = calc(operator, value1, value2)
+    display.textContent = calc(operator, value1, value2).toFixed(1)
 })
 //==== clear display
 function clearDisplay(){
