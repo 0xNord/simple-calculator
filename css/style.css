@@ -353,7 +353,7 @@ body {
   height: 100vh;
   padding: 0 15px;
   margin: 0 auto;
-  background-color: aqua;
+  background-color: #f1fbfb;
   display: flex;
   flex-direction: column;
   align-items: center;
